@@ -1,7 +1,7 @@
 <br> 1.	Write a program to find sum of two fractions
 	<br> void input(int \*num1, int \*den1, int \*num2, int \*den2);
 	<br> void add(int num1,int den1, int num2, int den2, int \*num3, int \*den3);
-	<br> void output(float num1, int den1, int num2, int den2, int num3, int den3);
+	<br> void output(int num1, int den1, int num2, int den2, int num3, int den3);
 	<br> input:
 	<br> 1 4
 	<br> 1 2
