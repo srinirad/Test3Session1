@@ -28,7 +28,7 @@
 	<br> int input_degree();
 	<br> float input_x();
 	<br> void input_coefficients(int n, float a[n]);
-	<br> float evaluate_polynomial(int float a[n], float x);
+	<br> float evaluate_polynomial(int n, int float a[n], float x);
 	<br> void out_put(int n, int a[n], float x, float result);
 	<br> input:
 	<br> 1 1 1
