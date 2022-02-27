@@ -1,90 +1,80 @@
-<br> 1.	Write a program to find the distance between two points
-		<br> void input(float \*x1, float \*y1, float \*x2, float \*y2);
-		<br> void find_distance(float x1, float y1, float x2, float y2, float *area);
-		<br> void output(float x1, float y1,float x2, float y2, float area);
-		<br> input:
-		<br> 1 1 2 2
-		<br> output:
-		<br> the distance between point (1.000000,1.000000) and (2.000000,2.000000) is  with 1.4142
-
-<br> 2.	Write a program to find whether the three points form a triangle.
-	<br> void input_triangle(float \*x1, float \*y1, float \*x2, float \*y2, float \*x3, float \*y3);
-	<br> int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
-	<br> void output(float x1, float y1, float x2, float y2,float x3, float y3, int istriangle)
-
-
-<br> 3.	Write a program find whether a given number is a prime number. 
-	<br> int input_number();
-	<br> int is_prime(int n);
-	<br> void output(int n, int is_prime);
-	<br> input: 
-	<br> 3
-	<br> output:
-	<br> 3 is a prime number.
-
-<br> 4.	Write a program to find nth number in fibonacci sequence.
-        <br> Fibonacci sequence consists of 0,1,1,2,3,5,8,13,21........
-	<br> int input();
-	<br> int find_fibo(int n);
-	<br> void output(int n, int fibo);
-
-<br> 5. Write a program to find all the prime numbers between erotosthenes sieve method.
-	<br> int input_array_size();
-	<br> void init_array(int n, int a[n];
-	<br> void erotosthenes_sieve(int n, int a[n]);
-	<br> void out_put(int n, int a[n]);
+<br> 1.	Write a program to find sum of two fractions
+	<br> void input(int \*num1, int \*den1, int \*num2, int \*den2);
+	<br> void add(int num1,int den1, int num2, int den2, int \*num3, int \*den3);
+	<br> void output(float num1, int den1, int num2, int den2, int num3, int den3);
 	<br> input:
-	<br> 100
+	<br> 1 4
+	<br> 1 2
 	<br> output:
-	<br> 2,3,7,11,13,19,23,29,31,...
+	<br> 1/2 + 1/4 = 3/4
+
+<br> 2.	Write a program to find the smallest of three fractions.
+	<br> struct _fraction 
+	<br> {
+	<br>    int num,den;
+	<br> };
+	<br> typedef _fraction Fraction
+	<br> Fraction input_fraction();
+	<br> Fraction Largest_fraction(Fraction f1, Fraction f2, Fraction f3)
+	<br> void output(Fraction f1, Fraction f2, Fraction f3, Fraction largest)
+
+
+<br> 3.	Write a program find the nCr given n and r. 
+	<br> int input_n_and_r(int \*n, int \*r)
+	<br> int ncr(int n, int r);
+	<br> void output(int n, int r, int result);
+
+<br> 4. Write a program to evaluate a polynomial at a given point using horners method.
+	<br> int input_degree();
+	<br> float input_x();
+	<br> void input_coefficients(int n, float a[n]);
+	<br> float evaluate_polynomial(int float a[n], float x);
+	<br> void out_put(int n, int a[n], float x, float result);
+	<br> input:
+	<br> 1 1 1
+	<br> output:
+	<br> 1+1\*x + 1\*x^2 at 1.000000 is 1.000000
 
 	
-<br> 6.	Write a program to find the index of a substring of a string.
+<br> 5. write a program to find the index of the largest number in an array.
+	<br> int input_size();
+	<br> void input_array(int n, int a[n]);
+	<br> int find_largest(int n, int a[n]);
+	<br> void out_put(int n, int a[n], int largest);
+
+
+<br> 6. Write a program to count the number of words int a string using strtok ( string.h)
 	<br> void input_string(char *a);
-	<br> int str_reverse(char \*string, char \*substring);
-	<br> void output(char \*string, char \*substring, int index);
+	<br> int count_words(char \*string);
+	<br> void output(char \*string, int no_words);
 	<br> input:
-	<br> helloworldhello
-	<br> world
+	<br> hello world hello
+	<br> 
 	<br> output:
+	<br> 2
 	<br> The index of world in helloworldhello is 5
 	
-<br> 7. Write a program to find the length of a line.
-        <br> struct _point {
-	<br>	float x,y;
-	<br> };
-        <br> typedef struct _point Point;
-	<br> struct _line
+<br> 7. Write a program to add two fractions.
+	<br> struct _fraction 
 	<br> {
-	<br>	Point p1,p2;
-	<br>	float distance;
+	<br>    int num,den;
 	<br> };
-	<br> typedef struct _line Line
-	<br> Point input_point();	
-	<br> Line input_line(); 
-	<br> void find_length(Line \*l);
-	<br> void output(Line l);
+	<br> typedef _fraction Fraction;
+	<br> int find_gcd(int a, int b);
+	<br> Fraction input_fraction();
+	<br> Fraction add_fractions(Fraction f1, Fraction f2)
+	<br> void output(Fraction f1, Fraction f2, Fraction f3, Fraction sum)
 	
-<br> 8. Write a program to find the permeter of a polygon
-	<br> struct _point {
-	<br>	float x,y;
-	<br> };
-        <br> typedef struct _point Point;
-	<br> struct _line
+<br> 8. Write program to add n fractions
+	<br> struct _fraction 
 	<br> {
-	<br>	Point p1,p2;
-	<br>	float distance;
+	<br>    int num,den;
 	<br> };
-	<br> struct _line Line;
-	<br> struct _polygon {
-        <br>   int n;
-	<br>   Line l[100];
-	<br>   float perimenter;
-	<br> }
-	<br> int input_n();
-	<br> int input_polygon( int n, Polygon \*p);
-	<br> Line input_line();
-	<br> void input_n_lines(int n, Line l[n]);
-	<br> void find_perimeter(Polygon \*p);
-	<br> void output(Polygon p);
+	<br> typedef _fraction Fraction;
+	<br> int find_gcd(int a, int b);
+	<br> Fraction input_fraction();
+	<br> void input_in_fractions(int n, Fraction f[n]);
+	<br> Fraction add_fractions(Fraction f1, Fraction f2);
+	<br> Fraction add_n_fractions(int n,Fraction f[n]);
+	<br> void output(int n, Fraction f[n], Fraction sum);
 
