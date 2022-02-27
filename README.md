@@ -43,7 +43,7 @@
 	<br> void out_put(int n, int a[n], int largest);
 
 
-<br> 6. Write a program to count the number of words int a string using strtok ( string.h)
+<br> 6. Write a program to count the number of words in a string using strtok ( string.h)
 	<br> void input_string(char *a);
 	<br> int count_words(char \*string);
 	<br> void output(char \*string, int no_words);
@@ -51,8 +51,7 @@
 	<br> hello world hello
 	<br> 
 	<br> output:
-	<br> 2
-	<br> The index of world in helloworldhello is 5
+	<br> 3
 	
 <br> 7. Write a program to add two fractions.
 	<br> struct _fraction 
